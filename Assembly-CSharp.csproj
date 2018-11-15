@@ -65,6 +65,7 @@
     <Compile Include="Assets\Script\Old\Xi_player.cs" />
     <Compile Include="Assets\Script\Old\xiBase.cs" />
     <Compile Include="Assets\Script\StageSetting.cs" />
+    <Compile Include="Assets\Script\StartSceneDice.cs" />
     <Compile Include="Assets\Script\StartTextControll.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/vantan/Desktop/Owl_Uni-master/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
