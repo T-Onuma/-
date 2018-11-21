@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{1BB54441-4772-24ED-6CFF-856365A0CFA8}</ProjectGuid>
+    <ProjectGuid>{C67FD2CD-9799-1731-5F0D-6B0370A8A0AE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -59,19 +59,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Controller.cs" />
-    <Compile Include="Assets\Script\DiceControll.cs" />
+    <Compile Include="Assets\Script\GameScene\ChangeResult.cs" />
+    <Compile Include="Assets\Script\GameScene\Controller.cs" />
+    <Compile Include="Assets\Script\GameScene\CountDownTimer.cs" />
+    <Compile Include="Assets\Script\GameScene\DiceControll.cs" />
+    <Compile Include="Assets\Script\GameScene\Score.cs" />
+    <Compile Include="Assets\Script\GameScene\StageSetting.cs" />
+    <Compile Include="Assets\Script\GameScene\StartTextControll.cs" />
     <Compile Include="Assets\Script\Old\rotater.cs" />
     <Compile Include="Assets\Script\Old\Xi_player.cs" />
     <Compile Include="Assets\Script\Old\xiBase.cs" />
-    <Compile Include="Assets\Script\StageSetting.cs" />
-    <Compile Include="Assets\Script\StartSceneDice.cs" />
-    <Compile Include="Assets\Script\StartTextControll.cs" />
+    <Compile Include="Assets\Script\Result\FinalScore.cs" />
+    <Compile Include="Assets\Script\StartScene\ChangeScene.cs" />
+    <Compile Include="Assets\Script\StartScene\StartSceneDice.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/vantan/Desktop/Owl_Uni-master/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/Unity保管庫/testOne/-/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/vantan/Desktop/Owl_Uni-master/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/Unity保管庫/testOne/-/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -307,7 +312,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{6F5CC20A-F897-4D87-117D-4FD408E8FB1E}</Project>
+      <Project>{1864B81F-48C3-6FEC-F830-6958499F92D2}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
