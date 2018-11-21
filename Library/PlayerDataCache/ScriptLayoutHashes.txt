@@ -6,6 +6,7 @@ Assets/StartScene.unity
 Assets/XI.unity
 Assets/ResultScene.unity
 SceneListEnd?
+dd5481137759597d614818793c90a7fe Assembly-CSharp.dll:.ChangeScene
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 cf455f7a806648c6ed4c7d3e3f8a0e03 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 13bdb7c23815c33a33b37b0ba8dd39be UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -112,7 +113,8 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 56314e622952b83bff5cb62131c100d1 Assembly-CSharp.dll:.StageSetting
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-64ecefa66d8a7cfaef86b2571c69d941 Assembly-CSharp.dll:.CountDownTimer
+df71734a241fae17d9ffd9e8bfb0a270 Assembly-CSharp.dll:.FinalScore
+ab825d5fd92e320b0790d6b5ddf1e25e Assembly-CSharp.dll:.CountDownTimer
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:.MoveSample
@@ -139,6 +141,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 6407b1404a548fe3c13c74783a968eff Assembly-CSharp.dll:.Controller
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.StartSceneDice
+dd5481137759597d614818793c90a7fe Assembly-CSharp.dll:.ChangeResult
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 f02726adeff0a3ec5905565234b372da UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
@@ -161,6 +164,3 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 00c706e163cb2f56b8841e75bed44e3d Assembly-CSharp.dll:.StartTextControll
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 5728128d4398ae7a81b0d0e5aa5dc88a Assembly-CSharp.dll:.Xi_player
-dd5481137759597d614818793c90a7fe Assembly-CSharp.dll:.ChangeScene
-dd5481137759597d614818793c90a7fe Assembly-CSharp.dll:.ChangeResult
-df71734a241fae17d9ffd9e8bfb0a270 Assembly-CSharp.dll:.FinalScore

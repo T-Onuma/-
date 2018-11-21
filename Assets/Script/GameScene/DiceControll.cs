@@ -16,23 +16,23 @@ public class DiceControll : MonoBehaviour {////////////////////stageSettingの�
     float cubeSizeHalf;                  //キューブの大きさの半分
     bool isRotate = false;               //回転中に立つフラグ。回転中は入力を受け付けない
 
+    float x_hantei = 0;//位置補正用　
+    float z_hantei = 0;//位置補正用
 
-    float x_hantei = 0;
-    float z_hantei = 0;
     public StageSetting stageSetting;
 
-    float rayMaxDistance = 1.0f;
+    float rayMaxDistance = 1.0f;//rayの最大距離
     //現在地
     [SerializeField]
-    private int dicePosX = 1;
+    private int dicePosX = 1;//座標
     [SerializeField]
-    private int dicePosZ = 1;
+    private int dicePosZ = 1;//座標
     //移動先地点(存在しない値として初期値-1代入)
     private int bfDicePosX = -1;
     private int bfDicePosZ = -1;
     // bool
     GameObject refObj;
-    GameObject Pl;
+    GameObject Pl;//プレイヤー
     [SerializeField]
     int upNumber;//上面の数字
 
@@ -44,8 +44,8 @@ public class DiceControll : MonoBehaviour {////////////////////stageSettingの�
     public bool chainCheckFlag = false;//コンボ数検査の二度付け禁止
     public bool[] branchFlag = new bool[3];
 
-    public DiceControll firstDiceControll;
-    public DiceControll chainDiceControll;
+    public DiceControll firstDiceControll;//コンボの発火点
+    public DiceControll chainDiceControll;//コンボ先のダイス
     public DiceControll[] stackControll = new DiceControll[5];
    
     

@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class StageSetting : MonoBehaviour {
+    [Header("開始時ステージを生成に使用するオブジェクト")]
     [SerializeField]
     private GameObject StageBlock;
+    [Header("ダイス生成に使用するオブジェクト")]
     [SerializeField]
     private GameObject SpawnDice;
+    [Header("プレイヤーに使用するオブジェクト")]
     [SerializeField]
     private GameObject Player;
    
@@ -19,7 +22,7 @@ public class StageSetting : MonoBehaviour {
 
     private int allBlock;
 
-    public bool[,] objinfo=new bool[7,7];//12*12 false,無し　true,有り
+    public bool[,] objinfo=new bool[7,7];// false,無し　true,有り
 
     private int score;
   
@@ -54,7 +57,7 @@ public class StageSetting : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKey/*Down*/(KeyCode.L))
+        if (Input.GetKey(KeyCode.L))
         {
             int spawnX = UnityEngine.Random.Range(0, 6+1);//X,0~6 Z,0~-6
             int spawnZ = UnityEngine.Random.Range(0, 6+1);//X,0~6 Z,0~-6
