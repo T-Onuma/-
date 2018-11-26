@@ -268,9 +268,9 @@ public class DiceControll : MonoBehaviour {////////////////////stageSettingの�
         }
         //
 
-    }
+    }//被チェイン時に作動
     
-    void StackBanish()
+    void StackBanish()//条件達成時にstack内のdiceを消去する
     {
         for (int i = 0; i<=4; i++)
         {
@@ -282,14 +282,14 @@ public class DiceControll : MonoBehaviour {////////////////////stageSettingの�
         }
         CleanStack();
     }
-    GameObject IgnitionPoint()
+    GameObject IgnitionPoint()//自オブジェクト（dice）がコンボの発火点の場合起動
     {
         chainCheckFlag = true;
         firstChainObj = this.gameObject;
         return firstChainObj;
     }
 
-    public void Banish()
+    public void Banish()//自オブジェクト消去前のエフェクト及び点数の追加
     {
         iTween.ScaleTo(gameObject, iTween.Hash("x", 1.1f,
                 "time", 1.5f,
@@ -297,13 +297,13 @@ public class DiceControll : MonoBehaviour {////////////////////stageSettingの�
                 "oncompletetarget", this.gameObject));
         FindObjectOfType<Score>().AddPoint(upNumber * 100);
     }
-    public void OncompleteBanish()
+    public void OncompleteBanish()//自オブジェクト消去プログラム及び情報伝達
     {
         Destroy(this.gameObject);
         stageSetting.InfoBanith(dicePosX, dicePosZ);
     }
 
-    void CleanStack()
+    void CleanStack()//チェイン不発時のスタック内洗浄
     {
         for (int i = 0; i <= 4; i++)//スタック内洗浄
         {
@@ -311,7 +311,7 @@ public class DiceControll : MonoBehaviour {////////////////////stageSettingの�
         }
     }
 
-    public void DiceSpawn(int x,int z)
+    public void DiceSpawn(int x,int z)//自オブジェクト生成時のダイスの目シャッフル
     {   //spawn時シャッフル機構
         transform.Rotate(Random.Range(0, 4) * 90, Random.Range(0, 4) * 90, Random.Range(0, 4) * 90);
 
@@ -322,7 +322,7 @@ public class DiceControll : MonoBehaviour {////////////////////stageSettingの�
         iTween.MoveTo(this.gameObject, iTween.Hash("y", 0f));
     }
 
-    void WASD_Checker()
+    void WASD_Checker()//回転または移動終了時のチェインチェック、
     {
         int mySrowCount = 0;
         //四方上下にray + 数字更新
@@ -418,7 +418,7 @@ public class DiceControll : MonoBehaviour {////////////////////stageSettingの�
         }
     }
 
-    private void NumberCheck()
+    private void NumberCheck()//上面の数字設定用
     {
         RaycastHit check;//連鎖時用
         //s数字確認
@@ -643,7 +643,7 @@ public class DiceControll : MonoBehaviour {////////////////////stageSettingの�
         WASD_Checker();
     }
 
-    IEnumerator MoveCube()
+    IEnumerator MoveCube()//回転用IEnumerator関数
     {
         //回転中のフラグを立てる
         isRotate = true;
